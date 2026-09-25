@@ -29,7 +29,8 @@ Best on a desktop, with headphones. It needs WebGL2 with floating-point render t
 | File | Purpose |
 |---|---|
 | `limit.html` | The film, and the single source of truth. Opens in English by default. |
-| `build.mjs` | Builds the Mongolian version and the standalone pages from `limit.html`. |
+| `build.mjs` | Builds the Mongolian version and the standalone pages from `limit.html`, and adds the link-preview tags. |
+| `assets/og.jpg`, `assets/og-mn.jpg` | Link-preview images (1200×630), rendered from the film's black-hole scene. |
 | `Dockerfile`, `nginx.conf`, `fly.toml` | Serve the film on Fly.io. |
 
 ## Build and run locally

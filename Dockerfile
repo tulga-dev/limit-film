@@ -1,7 +1,8 @@
-# build both language versions from the source file
+# build both language versions and their preview images from the source file
 FROM node:22-alpine AS build
 WORKDIR /src
 COPY limit.html build.mjs ./
+COPY assets/ ./assets/
 RUN node build.mjs
 
 # serve them: English at /, Mongolian at /mn/
